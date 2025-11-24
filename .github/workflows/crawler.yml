@@ -2,9 +2,11 @@ name: Hot News Crawler
 
 on:
   schedule:
-    - cron: "40 21 * * *"  # 每天 UTC 21:40 → 北京时间次日 5:40
-    - cron: "0 0 * * *"    # 每天 UTC 00:00 → 北京时间 8:00
+    - cron: "40 21 * * *"  # 北京时间次日 5:40
+    - cron: "0 4 * * *"    # 北京时间 12:00
+    - cron: "0 12 * * *"   # 北京时间 20:00
   workflow_dispatch:
+
 
 
 # 添加权限设置
